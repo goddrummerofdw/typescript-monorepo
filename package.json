@@ -4,7 +4,7 @@
   "main": "./src/index.tsx",
   "scripts": {
     "start:client": "webpack serve --config webpack.config.js --mode development --open",
-    "poststart": "direnv allow && nodemon ./src/server/index.ts",
+    "start:server": "direnv allow && nodemon ./src/server/index.ts",
     "build": "webpack --mode production"
   },
   "license": "MIT",
