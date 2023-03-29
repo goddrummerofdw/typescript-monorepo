@@ -4,6 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const nodeExternals = require('webpack-node-externals');
 
 const clientConfig = {
+  mode: "development",
   entry: './src/client/index.tsx',
   output: {
     path: path.resolve(__dirname, 'dist', 'client'),
@@ -41,11 +42,12 @@ const clientConfig = {
     hot: true,
     compress: true,
     port: 3001,
-    open: 'Google Chrome'
+    open: "/"
   },
 };
 
 const backendConfig = {
+  mode: "development",
   entry: './src/server/index.ts',
   target: 'node',
   externals: [nodeExternals()],

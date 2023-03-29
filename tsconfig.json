@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
+    "outDir": "dist",
     "noImplicitAny": true,
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
+    "target": "es6",
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
